@@ -92,11 +92,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any inquiries or feedback, feel free to reach out:
-
-- My Name: Maziyar kolagar
-- Gmail: [Maziyarkolagar@gmail.com]
-
----
-
-Thank you for checking out the Django Basic Electronic Shop project! Happy coding!
+Created by [Maziyar kolagar](https://github.com/Thrymheim/MyBlog) - Feel free to connect with me [maziyarkolagar@gmail.com]
