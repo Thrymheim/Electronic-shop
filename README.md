@@ -27,7 +27,7 @@ Welcome to the Django Basic Electronic Shop project! This web application allows
 - **Python:** The programming language used for writing the application.
 - **SQLite:** Default database used for local development (can be switched to PostgreSQL or another database).
 - **HTML/CSS:** Markup and style for designing the frontend of the application.
-- 
+  
 ## Installation
 
 To get started with the Django Basic Electronic Shop project, follow these steps:
