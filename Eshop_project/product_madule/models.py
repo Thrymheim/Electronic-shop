@@ -9,7 +9,7 @@ class product(models.Model):
     rating = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)], default=1)
     short_description = models.CharField(max_length=360, null=True)
     is_active = models.BooleanField(default=False) #if true user can see the product
-    slug = models.SlugField(default='', null=False, db_index=True) #we use db_index for feilds we make lots of query on it cus makes query better
+    slug = models.SlugField(default='', null=False, db_index=True, blank=True) #we use db_index for feilds we make lots of query on it cus makes query better
 
     def get_absolute_url(self):
         return reverse('product-detail', args=[self.slug])
