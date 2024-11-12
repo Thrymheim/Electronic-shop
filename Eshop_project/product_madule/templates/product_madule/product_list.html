@@ -11,4 +11,11 @@
             <li><a href="{{ product.get_absolute_url }}" style="color: black; text-decoration: none">{{ product.title }} / price : {{ product.price }}</a></li>
         {% endfor %}
     </ul>
+    <hr>
+    <p>
+        Totall number pf products = {{ totall_number_of_products }}
+    </p>
+    <p>
+        Average rating : {{ average_rating.rating__avg }}
+    </p>
 {% endblock %}
