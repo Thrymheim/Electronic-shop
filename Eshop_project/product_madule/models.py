@@ -9,9 +9,16 @@ class ProductCategory(models.Model):
 
     def __str__(self):
          return self.title
+class ProductInformation(models.Model):
+    color = models.CharField(max_length=300, verbose_name='رنگ')
+    size = models.CharField(max_length=300, verbose_name='سایز')
+    def __str__(self):
+        return f'{self.color} - {self.size}'
 
 class product(models.Model):
     title = models.CharField(max_length=300) #charfield is for small amount of text unlile text field
+    product_inforamtion = models.OneToOneField(ProductInformation, on_delete=models.CASCADE,
+                                             related_name='product', verbose_name='اطلاعات' , null=True)
     category = models.ForeignKey(ProductCategory, on_delete=models.CASCADE, null=True) #cascade means if category got deleted also delete the products
     #or u can say models.protect to not delete them
     price = models.IntegerField()
