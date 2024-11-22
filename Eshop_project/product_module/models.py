@@ -20,7 +20,7 @@ class ProductCategory(models.Model):
 
 
 class Product(models.Model):
-    title = models.CharField(max_length=300)
+    title = models.CharField(max_length=300, verbose_name='عنوان محصول')
     category = models.ManyToManyField(
         ProductCategory,
         related_name='product_categories',
@@ -28,7 +28,7 @@ class Product(models.Model):
     price = models.IntegerField(verbose_name='قیمت')
     short_description = models.CharField(max_length=360, db_index=True, null=True, verbose_name='توضیحات کوتاه')
     description = models.TextField(verbose_name='توضیحات اصلی', db_index=True)
-    slug = models.SlugField(default="", null=False, db_index=True, blank=True, max_length=200, unique=True)
+    slug = models.SlugField(default="", null=False, db_index=True, blank=True, max_length=200, unique=True, verbose_name='عنوان در url')
     is_active = models.BooleanField(default=False, verbose_name='فعال / غیرفعال')
     is_delete = models.BooleanField(verbose_name='حذف شده / نشده')
 
