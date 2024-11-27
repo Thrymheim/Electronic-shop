@@ -16,6 +16,7 @@ Welcome to the Django Basic Electronic Shop project! This web application allows
 
 - **User Authentication:** Register, login, and logout functionality for users.
 - **Product Listings:** Browse through a wide range of electronic products with images, descriptions, and prices.
+- **Contact us page:** User can inform admin if they incounter a problem.
 - **Product Detail Page:** View detailed information about each product.
 - **Cart Functionality:** Add products to a shopping cart.
 - **Checkout Process:** Complete purchases through a simple checkout process.
