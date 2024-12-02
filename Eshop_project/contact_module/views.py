@@ -32,9 +32,4 @@ class ContactUsView(View):
 #         if contact_form.is_valid():
 #             contact_form.save()
 #             return redirect('home_page')
-#     else:
-#         contact_form = ContactUsModelForm()
-#
-#     return render(request, 'contact_module/contact_us_page.html', {
-#         'contact_form': contact_form
-#     })
+
